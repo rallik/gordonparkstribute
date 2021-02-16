@@ -32,7 +32,7 @@ header h2 {
 }
 
 figure {
-    margin: 5% auto auto auto;
+    margin: 5% auto 0 auto;
     width: min-content;
     display: flex;
     justify-content: center;
@@ -57,13 +57,27 @@ figcaption {
 }
 
 #tribute-info {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 10%;
+}
+
+.tribute-txt {
+    text-align: center;
 }
 
 #tribute-link {
     margin-left: auto;
     margin-right: auto;
     align-self: baseline;
+}
+
+@media screen and (max-width: 1000px) {
+    #tribute-info {
+        margin-top: 20%;
+    }
+    .tribute-txt{
+        text-align: justify;
+    }
 }
